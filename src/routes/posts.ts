@@ -5,4 +5,5 @@ const router = express.Router();
 
 router.post('/valid-insurance', controller.validInsurance);
 
+
 export default router;

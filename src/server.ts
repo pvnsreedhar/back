@@ -6,6 +6,7 @@ import routes from './routes/posts';
 
 const router: Express = express();
 
+
 /** Logging */
 router.use(morgan('dev'));
 /** Parse the request */
