@@ -1,11 +1,15 @@
 /** source/server.ts */
 import http from 'http';
 import express, { Express } from 'express';
+import { Request } from "express";
+import cors from 'cors';
 import morgan from 'morgan';
 import routes from './routes/posts';
 
+
 const router: Express = express();
 
+router.use(cors<Request>());
 
 /** Logging */
 router.use(morgan('dev'));
